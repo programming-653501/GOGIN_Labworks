@@ -6,5 +6,6 @@
 3) Добавлена Третяя Лабораторная(Programming.Labwork3)
 4) Добавлена первая половина 4 Лабораторная(Programming.Labwork4 и Programming.Labwork4.2)
 5) Добавлена 6 лабораторная
+6) Добавлена 5 ЛР (DoublyLinkedList)
 
 !!!Лабы написаны на Unix-подобной ОС, поэтому Conio.h, getch() отсутствуют 
