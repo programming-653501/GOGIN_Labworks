@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab7.controller.Controller">
+  <children>
+    <TableView fx:id="tableCheque" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="387.0">
+      <columns>
+        <TableColumn fx:id="idColumn" prefWidth="35.0" text="№" />
+        <TableColumn fx:id="nameColumn" prefWidth="190.0" text="Name" />
+        <TableColumn fx:id="numberColumn" prefWidth="60.0" text="Number" />
+        <TableColumn fx:id="priceColumn" prefWidth="101.0" text="Price" />
+      </columns>
+    </TableView>
+    <Label layoutX="14.0" layoutY="18.0" text="SUPERMARKET.COM">
+      <font>
+        <Font name="Verdana" size="24.0" />
+      </font>
+    </Label>
+      <Label alignment="CENTER" layoutX="624.0" layoutY="136.0" prefHeight="23.0" prefWidth="120.0" style="&#10;" text="NUMBER" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="624.0" layoutY="100.0" prefHeight="23.0" prefWidth="120.0" style="&#10;" text="BARCODE" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="440.0" layoutY="196.0" prefHeight="23.0" prefWidth="260.0" style="&#10;" text="DISCOUNT CODE:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="printButton"  layoutX="412.0" layoutY="359.0" mnemonicParsing="false" text="PRINT" />
+      <TextField fx:id="discountInput" layoutX="456.0" layoutY="219.0" />
+      <Button fx:id="getButton" layoutX="640.0" layoutY="219.0" mnemonicParsing="false" text="GET" />
+      <Button fx:id="addButton" layoutX="440.0" layoutY="169.0" mnemonicParsing="false" text="ADD" />
+      <TextField fx:id="numberInput" layoutX="440.0" layoutY="134.0" />
+      <TextField fx:id="barCodeInput" layoutX="440.0" layoutY="98.0" />
+      <Label alignment="CENTER" layoutX="453.0" layoutY="62.0" prefHeight="23.0" prefWidth="260.0" style="&#10;" text="ADD:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="544.0" layoutY="375.0" prefHeight="23.0" prefWidth="260.0" style="&#10;" text="© Hohin Yury, 2017" textAlignment="CENTER" textFill="#90b9c5"
+             wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="440.0" layoutY="257.0" prefHeight="23.0" prefWidth="260.0" style="&#10;" text="Total Price:" textAlignment="CENTER" textFill="#f0f047"
+             wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPrice" alignment="CENTER" layoutX="440.0" layoutY="290.0" prefHeight="23.0" prefWidth="260.0" style="&#10;" textAlignment="CENTER" textFill="#ff529b"
+             wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+  </children>
+</AnchorPane>
