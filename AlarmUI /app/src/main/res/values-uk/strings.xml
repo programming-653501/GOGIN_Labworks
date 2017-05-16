@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repeat_weekly">Щотижня</string>
+    <string name="alarm_name">Ім\'я будильника</string>
+    <string name="alarm_sound">Звукова сигналізація</string>
+    <string name="alarm_sound_default">Виберіть звук</string>
+    <string name="friday">П\'ятниця</string>
+    <string name="monday">Понеділок</string>
+    <string name="saturday">Субота</string>
+    <string name="sunday">Неділя</string>
+    <string name="thursday">Четвер</string>
+    <string name="tuesday">Вівторок</string>
+    <string name="wednesday">Середа</string>
+</resources>

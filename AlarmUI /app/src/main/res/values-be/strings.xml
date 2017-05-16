@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alarm_name">Імя гадзінніка</string>
+    <string name="alarm_sound">Гук званку</string>
+    <string name="alarm_sound_default">Вылучыце гук</string>
+    <string name="friday">Пятніца</string>
+    <string name="monday">Панядзелак</string>
+    <string name="repeat_weekly">Штотыдзень</string>
+    <string name="saturday">Субота</string>
+    <string name="sunday">Нядзеля</string>
+    <string name="thursday">Чацвер</string>
+    <string name="tuesday">Аўторак</string>
+    <string name="wednesday">Серада</string>
+</resources>

@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true" >
+
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="by.bsuir.alarmui.AlarmSettingsActivity" >
+
+        <EditText
+                    android:id="@+id/details_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_time_picker"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:ems="10"
+                    android:hint="@string/alarm_name" />
+        <TimePicker
+            android:id="@+id/details_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details_name" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider2"
+            android:checked="true"
+            android:text="@string/repeat_weekly" />
+        
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/repeat_weekly" />
+
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_sunday"
+            android:layout_below="@+id/repeat_sunday"
+            android:checked="true"
+            android:text="@string/monday" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_monday"
+            android:layout_below="@+id/repeat_monday"
+            android:checked="true"
+            android:text="@string/tuesday" />
+        
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_tuesday"
+            android:layout_below="@+id/repeat_tuesday"
+            android:checked="true"
+            android:text="@string/wednesday" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_wednesday"
+            android:layout_below="@+id/repeat_wednesday"
+            android:checked="true"
+            android:text="@string/thursday" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_thursday"
+            android:layout_below="@+id/repeat_thursday"
+            android:checked="true"
+            android:text="@string/friday" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/repeat_friday"
+            android:layout_below="@+id/repeat_friday"
+            android:checked="true"
+            android:text="@string/saturday" />
+        
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/repeat_saturday" />
+
+        <by.bsuir.alarmui.ListItem
+            android:id="@+id/repeat_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/divider1"
+            android:checked="true"
+            android:text="@string/sunday" />
+        <Chronometer
+            android:id="@+id/chrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider4"/>
+
+        <LinearLayout
+            android:id="@+id/alarm_ringtone_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/chrono"
+            android:background="@drawable/color_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/alarm_label_tone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/alarm_sound"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/alarm_song_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/alarm_sound_default"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alarm_ringtone_container" />
+    </RelativeLayout>
+
+</ScrollView>

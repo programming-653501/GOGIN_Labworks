@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alarm_name">Godzina nazwa</string>
+    <string name="alarm_sound">Dzwonek</string>
+    <string name="alarm_sound_default">Wybierz dźwięk</string>
+    <string name="friday">Piątek</string>
+    <string name="monday">Poniedziałek</string>
+    <string name="repeat_weekly">Tygodniowy</string>
+    <string name="saturday">Sobota</string>
+    <string name="sunday">Niedziela</string>
+    <string name="thursday">Czwartek</string>
+    <string name="tuesday">Wtorek</string>
+    <string name="wednesday">Środa</string>
+</resources>
